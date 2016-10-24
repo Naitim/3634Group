@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="2dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lesson Title"
+        android:id="@+id/titleTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/topicTextView"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Topic"
+        android:id="@+id/topicTextView"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/dateTextView"
+        android:paddingTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course"
+        android:id="@+id/courseTextView"
+        android:layout_alignTop="@+id/topicTextView"
+        android:layout_alignStart="@+id/topicTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/dateTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView16"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Lesson Name:"
+        android:id="@+id/textView13"
+        android:layout_alignBottom="@+id/titleTextView"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Course"
+        android:id="@+id/textView14"
+        android:layout_alignBottom="@+id/courseTextView"
+        android:layout_alignStart="@+id/textView13"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Topic:"
+        android:id="@+id/textView15"
+        android:paddingLeft="10dp"
+        android:layout_alignBottom="@+id/topicTextView"
+        android:layout_alignStart="@+id/textView16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Date(DD/MM/YY):"
+        android:id="@+id/textView16"
+        android:layout_alignBottom="@+id/dateTextView"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Tasks"
+        android:id="@+id/tasksButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/deleteButton"
+        android:paddingTop="10dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:id="@+id/deleteButton"
+        android:layout_alignBottom="@+id/dateTextView"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:id="@+id/editButton"
+        android:layout_above="@+id/textView15"
+        android:layout_alignEnd="@+id/deleteButton"/>
+
+</RelativeLayout>
